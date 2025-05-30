@@ -29,6 +29,11 @@
 
 ---
 
+## 📸 Screenshots
+
+### 🔹 QR Code Attendance Scanner
+![QR Code Screenshot](https://github.com/Laurence-Watchon/QRCodeAttender/raw/main/qrcode_atender_screenshot1.webp)
+
 ## 📧 Contact
 
 For suggestions or issues, feel free to contact the developers using email. laurencewatchon28@gmail.com.
