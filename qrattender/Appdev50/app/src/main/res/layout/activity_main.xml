@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/arc_background">
+
+    <!-- Square Logo in the Center -->
+    <ImageView
+        android:id="@+id/logo"
+        android:layout_width="180dp"
+        android:layout_height="180dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="80dp"
+        android:src="@drawable/ic_logo"
+        android:background="#1C1F1E"
+        android:scaleType="centerInside"
+        android:contentDescription="App Logo" />
+
+    <!-- Welcome Text -->
+    <TextView
+        android:id="@+id/welcomeText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/logo"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="160dp"
+        android:text="Welcome to QRCode Attendance"
+        android:textColor="#000000"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:textAlignment="center" />
+
+    <!-- Log In Button -->
+    <Button
+        android:id="@+id/btnLogIn"
+        android:layout_width="220dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/welcomeText"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="40dp"
+        android:text="LOG IN"
+        android:textSize="18sp"
+        android:textAllCaps="true"
+        android:textColor="#FFFFFF"
+        android:backgroundTint="#1C1F1E" />
+
+    <!-- Sign Up Button -->
+    <Button
+        android:id="@+id/btnRegister"
+        android:layout_width="220dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/btnLogIn"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:text="SIGN UP"
+        android:textAllCaps="true"
+        android:textSize="18sp"
+        android:textColor="#FFFFFF"
+        android:backgroundTint="#1C1F1E" />
+
+</RelativeLayout>

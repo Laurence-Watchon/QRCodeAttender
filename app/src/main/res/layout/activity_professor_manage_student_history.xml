@@ -1,0 +1,99 @@
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Professor_manage_student_history"
+    android:background="#FFFFFF">
+
+    <!-- Toolbar -->
+    <LinearLayout
+        android:id="@+id/lltool"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:background="#1C1F1E"
+        android:padding="16dp"
+        android:layout_alignParentTop="true">
+
+        <ImageView
+            android:id="@+id/back_arrow"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:src="@drawable/back_arrow"
+            app:tint="#FFFFFF"
+            android:contentDescription="Back Arrow"
+            android:layout_gravity="center_vertical" />
+
+        <TextView
+            android:id="@+id/settings_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:text="History"
+            android:textSize="18sp"
+            android:textColor="#FFFFFF"
+            android:layout_gravity="center_vertical" />
+    </LinearLayout>
+
+    <!-- Title Text -->
+    <TextView
+        android:id="@+id/historyDate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/lltool"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:text="Dates"
+        android:textSize="22sp"
+        android:gravity="center"
+        android:textStyle="bold"
+        android:textColor="#000000" />
+
+    <!-- ScrollView for the list of dates -->
+    <ScrollView
+        android:id="@+id/scrollView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/historyDate"
+        android:layout_marginBottom="16dp"
+        android:padding="16dp">
+
+        <LinearLayout
+            android:id="@+id/dateContainer"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <!-- Example of a date item -->
+            <TextView
+                android:id="@+id/sample_date"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="10dp"
+                android:background="@drawable/border"
+                android:gravity="center"
+                android:padding="12dp"
+                android:textSize="18sp"
+                android:text="Date"
+                android:textColor="@android:color/white" />
+        </LinearLayout>
+
+    </ScrollView>
+
+    <Button
+        android:id="@+id/exportButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="80dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="20dp"
+        android:layout_marginRight="80dp"
+        android:backgroundTint="#1C1F1E"
+        android:text="Export to PDF"
+        android:layout_alignParentBottom="true"
+        android:textColor="#FFFFFF" />
+
+</RelativeLayout>

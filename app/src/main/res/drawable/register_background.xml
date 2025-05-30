@@ -1,0 +1,16 @@
+<!-- res/drawable/custom_background.xml -->
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <!-- Black top section -->
+    <item>
+        <color android:color="#1C1F1E" />
+    </item>
+
+    <!-- White bottom section with rounded corners at the top -->
+    <item
+        android:top="150dp"> <!-- Adjust this value to control the white section's starting height -->
+        <shape android:shape="rectangle">
+            <solid android:color="#FFFFFF" />
+            <corners android:topLeftRadius="100dp" /> <!-- Large radius for smooth blending -->
+        </shape>
+    </item>
+</layer-list>

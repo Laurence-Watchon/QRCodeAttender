@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <item>
+        <shape xmlns:android="http://schemas.android.com/apk/res/android">
+            <!-- Set the background color to transparent -->
+            <solid android:color="@android:color/transparent" />
+
+            <!-- Border (stroke) -->
+            <stroke
+                android:width="2dp"
+                android:color="#1C1F1E" />
+
+            <!-- Rounded corners -->
+            <corners android:radius="16dp" />
+        </shape>
+    </item>
+</selector>

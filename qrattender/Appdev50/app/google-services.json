@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "299874161336",
+    "project_id": "registering-7471b",
+    "storage_bucket": "registering-7471b.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:299874161336:android:9bdd11d3b6e5285914da4d",
+        "android_client_info": {
+          "package_name": "com.example.appdev50"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBqal0uScc28mhWI_LyuuDEr-U6itUiYF0"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:299874161336:android:ebdb43ddee2e67e514da4d",
+        "android_client_info": {
+          "package_name": "com.example.pagreregister"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBqal0uScc28mhWI_LyuuDEr-U6itUiYF0"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

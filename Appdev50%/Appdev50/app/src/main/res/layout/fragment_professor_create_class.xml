@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    android:gravity="center"
+    tools:context=".Professor_create_class" >
+
+    <!-- Title -->
+    <TextView
+        android:id="@+id/tvAddNewClass"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Add New Class"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:textColor="@android:color/black"
+        android:layout_centerHorizontal="true"/>
+
+    <EditText
+        android:id="@+id/etcreateYearSection"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter Year and Section"
+        android:padding="10dp"
+        android:textColorHint="@android:color/darker_gray"
+        android:layout_marginTop="16dp"
+        android:layout_below="@id/tvAddNewClass"
+        android:background="@android:drawable/editbox_background"/>
+
+    <!-- Class Code Input -->
+    <EditText
+        android:id="@+id/etcreateClassCode"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter Class Code"
+        android:padding="10dp"
+        android:textColorHint="@android:color/darker_gray"
+        android:layout_marginTop="16dp"
+        android:layout_below="@id/etcreateYearSection"
+        android:background="@android:drawable/editbox_background"/>
+
+    <!-- Subject Name Input -->
+    <EditText
+        android:id="@+id/etcreateSubjectName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter Subject Name"
+        android:padding="10dp"
+        android:textColorHint="@android:color/darker_gray"
+        android:layout_marginTop="8dp"
+        android:layout_below="@id/etcreateClassCode"
+        android:background="@android:drawable/editbox_background"/>
+
+    <!-- Add Button -->
+    <Button
+        android:id="@+id/btncreateAdd"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Add"
+        android:textColor="@android:color/white"
+        android:backgroundTint="#D36BE5"
+        android:layout_marginTop="16dp"
+        android:padding="12dp"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/etcreateSubjectName"/>
+
+    <!-- ProgressBar -->
+
+
+</RelativeLayout>

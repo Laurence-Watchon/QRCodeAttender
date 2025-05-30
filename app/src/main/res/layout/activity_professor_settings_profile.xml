@@ -1,0 +1,263 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="#FFFFFF">
+
+    <LinearLayout
+        android:id="@+id/lltool"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:background="#1C1F1E"
+        android:padding="16dp">
+
+        <ImageView
+            android:id="@+id/back_arrow"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:src="@drawable/back_arrow"
+            app:tint="#FFFFFF"
+            android:contentDescription="Back Arrow"
+            android:layout_gravity="center_vertical" />
+
+        <TextView
+            android:id="@+id/settings_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:text="Profile"
+            android:textSize="18sp"
+            android:textColor="#FFFFFF"
+            android:layout_gravity="center_vertical" />
+    </LinearLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/lltool"
+        android:layout_above="@+id/btnEditProfile">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="16dp">
+
+            <!-- Profile Picture and Name -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:gravity="center"
+                android:padding="16dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginBottom="24dp">
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:id="@+id/profprofile_image"
+                    android:layout_width="130dp"
+                    android:layout_height="130dp"
+                    android:src="@drawable/profile_icon"
+                    android:contentDescription="Profile Picture"
+                    android:layout_marginBottom="8dp"
+                    app:shapeAppearanceOverlay="@style/CircularImage" />
+
+                <TextView
+                    android:id="@+id/profwelcome_message"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Student"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    android:textColor="#1C1F1E" />
+            </LinearLayout>
+
+            <!-- Profile Info Sections with Increased Space -->
+            <LinearLayout
+                android:layout_marginStart="16dp"
+                android:layout_marginEnd="16dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center_vertical"
+                style="@style/SettingsOptionBorder"
+                android:padding="12dp"
+                android:layout_marginBottom="16dp">
+
+                <ImageView
+                    android:layout_width="24dp"
+                    android:layout_height="24dp"
+                    android:src="@drawable/fullname"
+                    android:contentDescription="Full Name Icon"
+                    android:layout_marginEnd="16dp" />
+
+                <TextView
+                    android:id="@+id/proftvname"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Full Name"
+                    android:textSize="16sp"
+                    android:textColor="#1C1F1E" />
+            </LinearLayout>
+
+            <!-- Email Section -->
+            <LinearLayout
+                android:layout_marginStart="16dp"
+                android:layout_marginEnd="16dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center_vertical"
+                style="@style/SettingsOptionBorder"
+                android:padding="12dp"
+                android:layout_marginBottom="16dp">
+
+                <ImageView
+                    android:layout_width="24dp"
+                    android:layout_height="24dp"
+                    android:src="@drawable/email"
+                    android:contentDescription="Email Icon"
+                    android:layout_marginEnd="16dp" />
+
+                <TextView
+                    android:id="@+id/proftvemail"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Email"
+                    android:textSize="16sp"
+                    android:textColor="#1C1F1E" />
+            </LinearLayout>
+
+            <!-- Birthday Section -->
+            <LinearLayout
+                android:layout_marginStart="16dp"
+                android:layout_marginEnd="16dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center_vertical"
+                style="@style/SettingsOptionBorder"
+                android:padding="12dp"
+                android:layout_marginBottom="16dp">
+
+                <ImageView
+                    android:layout_width="24dp"
+                    android:layout_height="24dp"
+                    android:src="@drawable/birthday"
+                    android:contentDescription="Birthday Icon"
+                    android:layout_marginEnd="16dp" />
+
+                <TextView
+                    android:id="@+id/proftvdate_of_birth"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Birthday"
+                    android:textSize="16sp"
+                    android:textColor="#1C1F1E" />
+            </LinearLayout>
+
+            <!-- Gender Section -->
+            <LinearLayout
+                android:layout_marginStart="16dp"
+                android:layout_marginEnd="16dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center_vertical"
+                style="@style/SettingsOptionBorder"
+                android:padding="12dp"
+                android:layout_marginBottom="16dp">
+
+                <ImageView
+                    android:layout_width="24dp"
+                    android:layout_height="24dp"
+                    android:src="@drawable/gender"
+                    android:contentDescription="Gender Icon"
+                    android:layout_marginEnd="16dp" />
+
+                <TextView
+                    android:id="@+id/proftvgender"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Gender"
+                    android:textSize="16sp"
+                    android:textColor="#1C1F1E" />
+            </LinearLayout>
+
+            <!-- Mobile Number Section -->
+            <LinearLayout
+                android:layout_marginStart="16dp"
+                android:layout_marginEnd="16dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center_vertical"
+                style="@style/SettingsOptionBorder"
+                android:padding="12dp"
+                android:layout_marginBottom="16dp">
+
+                <ImageView
+                    android:layout_width="24dp"
+                    android:layout_height="24dp"
+                    android:src="@drawable/calling"
+                    android:contentDescription="Mobile Number Icon"
+                    android:layout_marginEnd="16dp" />
+
+                <TextView
+                    android:id="@+id/proftvmobile_number"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Mobile Number"
+                    android:textSize="16sp"
+                    android:textColor="#1C1F1E" />
+            </LinearLayout>
+
+            <!-- Address Section -->
+            <LinearLayout
+                android:layout_marginStart="16dp"
+                android:layout_marginEnd="16dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center_vertical"
+                style="@style/SettingsOptionBorder"
+                android:padding="12dp"
+                android:layout_marginBottom="16dp">
+
+                <ImageView
+                    android:layout_width="24dp"
+                    android:layout_height="24dp"
+                    android:src="@drawable/address"
+                    android:contentDescription="Address Icon"
+                    android:layout_marginEnd="16dp" />
+
+                <TextView
+                    android:id="@+id/proftvaddress"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Address"
+                    android:textSize="16sp"
+                    android:textColor="#1C1F1E" />
+            </LinearLayout>
+
+        </LinearLayout>
+    </ScrollView>
+
+    <Button
+        android:id="@+id/btnEditProfile"
+        android:layout_width="175dp"
+        android:gravity="center"
+        android:layout_height="wrap_content"
+        android:text="Edit Profile"
+        android:backgroundTint="#000000"
+        android:textColor="#FFFFFF"
+        android:layout_alignParentBottom="true"
+        android:layout_centerInParent="true"
+        android:paddingVertical="12dp"
+        android:textStyle="bold"
+        android:fontFamily="sans-serif"
+        android:layout_margin="8dp" />
+
+</RelativeLayout>

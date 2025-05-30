@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white">
+
+    <LinearLayout
+        android:id="@+id/dialogContainer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_margin="16dp"
+        android:background="@drawable/dialog_box_border"
+        android:padding="16dp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent">
+
+        <!-- Dialog Title -->
+        <TextView
+            android:id="@+id/EditTitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:text="Edit Class"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:textColor="#000000" />
+
+        <!-- Year and Section Input -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Year and Section*"
+            android:textSize="14sp"
+            android:layout_marginTop="10dp"
+            android:textColor="#000000" />
+
+        <EditText
+            android:id="@+id/editYearSection"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:hint="Enter Year and Section"
+            android:inputType="text"
+            android:background="@drawable/border"
+            android:layout_marginTop="2dp"
+            android:paddingStart="12dp"
+            android:gravity="center_vertical" />
+
+        <!-- Class Code Input -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Class Code*"
+            android:textSize="14sp"
+            android:layout_marginTop="15dp"
+            android:textColor="#000000" />
+
+        <EditText
+            android:id="@+id/editClassCode"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:hint="Enter Class Code"
+            android:inputType="text"
+            android:background="@drawable/border"
+            android:layout_marginTop="2dp"
+            android:paddingStart="12dp"
+            android:gravity="center_vertical" />
+
+        <!-- Subject Name Input -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Subject Name*"
+            android:textSize="14sp"
+            android:layout_marginTop="15dp"
+            android:textColor="#000000" />
+
+        <EditText
+            android:id="@+id/editSubjectName"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:hint="Enter Subject Name"
+            android:inputType="text"
+            android:background="@drawable/border"
+            android:layout_marginTop="2dp"
+            android:paddingStart="12dp"
+            android:layout_marginBottom="5dp"
+            android:gravity="center_vertical" />
+
+        <!-- Action Buttons -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:orientation="horizontal"
+            android:gravity="center"
+            android:layout_marginBottom="10dp">
+
+            <!-- Cancel Button -->
+            <Button
+                android:id="@+id/btnCancel"
+                android:layout_width="0dp"
+                android:layout_height="50dp"
+                android:layout_weight="1"
+                android:layout_marginEnd="8dp"
+                android:text="Cancel"
+                android:textSize="14sp"
+                android:backgroundTint="#D3D3D3"
+                android:textColor="#000000" />
+
+            <!-- Save Button -->
+            <Button
+                android:id="@+id/btnSave"
+                android:layout_width="0dp"
+                android:layout_height="50dp"
+                android:layout_weight="1"
+                android:layout_marginStart="8dp"
+                android:text="Save"
+                android:textSize="14sp"
+                android:backgroundTint="#000000"
+                android:textColor="#FFFFFF" />
+        </LinearLayout>
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

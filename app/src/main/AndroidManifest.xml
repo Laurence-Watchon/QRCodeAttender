@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+    <!-- Permissions -->
+    <uses-feature
+        android:name="android.hardware.camera"
+        android:required="false" />
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+
+    <application
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@drawable/ic_logo"
+        android:label="@string/app_name"
+        android:roundIcon="@drawable/ic_logo"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.Appdev50"
+        tools:targetApi="31">
+
+        <provider
+            android:name="androidx.core.content.FileProvider"
+            android:authorities="com.finals.appdev50.provider"
+            android:exported="false"
+            android:grantUriPermissions="true">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/files_path" />
+        </provider>
+
+        <activity
+            android:name=".login_professor"
+            android:exported="false" />
+        <activity
+            android:name=".TermsandConditions"
+            android:exported="false" />
+        <activity
+            android:name=".privacyPolicy"
+            android:exported="false" />
+        <activity
+            android:name=".ValidateEmail"
+            android:exported="false" />
+        <activity
+            android:name=".Professor_manage_class_takeAttendance"
+            android:exported="false" />
+        <activity
+            android:name=".Professor_manage_class_click"
+            android:exported="false"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name=".Student_show_class_click"
+            android:exported="false" />
+        <activity
+            android:name=".Professor_manage_student_history_click"
+            android:exported="false" />
+        <activity
+            android:name=".Professor_settings_resetpassword"
+            android:exported="false" />
+        <activity
+            android:name=".Professor_settings_editprofile"
+            android:exported="false" />
+        <activity
+            android:name=".Professor_settings_profile"
+            android:exported="false" />
+        <activity
+            android:name=".Professor_manage_student_history"
+            android:exported="false" />
+        <activity
+            android:name=".SplashActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".HomepageProfessor"
+            android:exported="false" />
+        <activity
+            android:name=".HomepageStudent"
+            android:exported="false"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name=".LoginActivity"
+            android:exported="false" />
+        <activity
+            android:name=".RegisterActivity"
+            android:exported="false" />
+        <activity
+            android:name=".MainActivity"
+            android:exported="true" />
+        <activity
+            android:name=".CaptureAct"
+            android:screenOrientation="portrait"
+            android:stateNotNeeded="true"
+            android:theme="@style/zxing_CaptureTheme" />
+    </application>
+
+</manifest>

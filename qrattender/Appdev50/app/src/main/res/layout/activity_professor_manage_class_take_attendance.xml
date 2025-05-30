@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="20dp"
+    tools:context=".Professor_manage_student_takeattendance">
+
+    <TextView
+        android:id="@+id/tvTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Take Attendance"
+        android:textSize="28sp"
+        android:textStyle="bold"
+        android:gravity="center"
+        android:layout_gravity="center"
+        android:layout_marginBottom="20dp"/>
+
+    <!-- Date - fixed, current date -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Date*"
+        android:textSize="20sp"
+        android:textStyle="bold"/>
+
+    <TextView
+        android:id="@+id/tvDate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="01/01/1000"
+        android:textSize="20sp"
+        android:layout_marginBottom="20dp"
+        android:textColor="#000"/>
+
+    <!-- Start Time -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Start of the Class*"
+        android:textSize="20sp"
+        android:textStyle="bold"/>
+
+    <EditText
+        android:id="@+id/etStartTime"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="time"
+        android:textSize="20sp"
+        android:hint="Select Start Time"
+        android:focusable="false"
+        android:layout_marginBottom="20dp"/>
+
+    <!-- End Time -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="End of the Class*"
+        android:textSize="20sp"
+        android:textStyle="bold"/>
+
+    <EditText
+        android:id="@+id/etEndTime"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="time"
+        android:hint="Select End Time"
+        android:textSize="20sp"
+        android:focusable="false"
+        android:layout_marginBottom="20dp"/>
+
+    <!-- Grace Period -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Grace Period (Optional)"
+        android:textSize="20sp"
+        android:textStyle="bold"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Students who scan code within this time will mark as present and not late."
+        android:textSize="18sp"
+        android:layout_marginBottom="10dp"/>
+
+    <EditText
+        android:id="@+id/etgraceperiod"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="number"
+        android:textSize="20sp"
+        android:hint="Enter Grace Period (Minutes)"
+        android:maxLength="2"
+        android:layout_marginBottom="30dp"/>
+
+    <!-- Generate QR Code Button -->
+    <Button
+        android:id="@+id/btngenerateqrcode"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Generate QR Code"
+        android:textSize="20sp"
+        android:backgroundTint="#FF00FF"
+        android:textColor="#fff"
+        android:layout_gravity="center"/>
+
+</LinearLayout>

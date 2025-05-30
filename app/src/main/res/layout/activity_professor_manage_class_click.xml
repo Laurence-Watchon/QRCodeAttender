@@ -1,0 +1,188 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:background="#FFFFFF"
+    tools:context=".Professor_manage_student_click">
+
+    <!-- Toolbar (Non-scrollable) -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:background="#000000"
+        android:padding="16dp"
+        android:gravity="center_vertical">
+
+        <ImageView
+            android:id="@+id/back_arrow"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:src="@drawable/back_arrow"
+            android:contentDescription="Back Button"
+            app:tint="#FFFFFF"
+            android:layout_marginEnd="8dp" />
+
+        <TextView
+            android:id="@+id/tvYearAndBlock"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Class Code 1"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:textColor="#FFFFFF" />
+
+        <TextView
+            android:id="@+id/btnHistory"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="History"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:textColor="#FFFFFF" />
+    </LinearLayout>
+
+    <!-- Class Details Section (Outside Toolbar) -->
+    <TextView
+        android:id="@+id/tvClassDetails"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Subject Name"
+        android:textSize="20sp"
+        android:gravity="center"
+        android:padding="8dp"
+        android:textColor="#000000"
+        android:textStyle="bold"/>
+
+    <!-- Scrollable Section -->
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:fillViewport="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <!-- Add New Student Section -->
+            <LinearLayout
+                android:id="@+id/addStudentContainer"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="20dp"
+                android:background="@drawable/border"
+                android:clickable="true"
+                android:focusable="true"
+                android:orientation="vertical"
+                android:padding="16dp">
+
+                <!-- Section Header -->
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="8dp">
+
+                    <!-- Add Icon -->
+                    <ImageView
+                        android:id="@+id/addIcon"
+                        android:layout_width="24dp"
+                        android:layout_height="24dp"
+                        android:layout_alignParentStart="true"
+                        android:layout_centerVertical="true"
+                        android:contentDescription="Add Icon"
+                        android:src="@drawable/addstudent"
+                        app:tint="#000000" />
+
+                    <!-- Add Class Text -->
+                    <TextView
+                        android:id="@+id/addClassTitle"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerHorizontal="true"
+                        android:text="Add Student"
+                        android:textColor="#000000"
+                        android:textSize="16sp"
+                        android:textStyle="bold" />
+
+                    <!-- Arrow Down Icon -->
+                    <ImageView
+                        android:id="@+id/arrowDown"
+                        android:layout_width="24dp"
+                        android:layout_height="24dp"
+                        android:layout_alignParentEnd="true"
+                        android:layout_centerVertical="true"
+                        android:contentDescription="Arrow Down"
+                        android:src="@drawable/arrow_down"
+                        app:tint="#000000" />
+                </RelativeLayout>
+                <!-- Add Student Form -->
+                <LinearLayout
+                    android:id="@+id/addStudentForm"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:visibility="gone">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:text="Enter Student Name*"
+                        android:textColor="#000000"
+                        android:textSize="14sp" />
+
+                    <EditText
+                        android:id="@+id/etStudentName"
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:layout_marginBottom="8dp"
+                        android:background="@drawable/border"
+                        android:hint="Enter full name (Surname, Firstname)"
+                        android:inputType="text"
+                        android:padding="8dp" />
+
+                    <Button
+                        android:id="@+id/addButton"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="70dp"
+                        android:layout_marginTop="8dp"
+                        android:layout_marginRight="70dp"
+                        android:backgroundTint="#1C1F1E"
+                        android:text="Add"
+                        android:textColor="#FFFFFF" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <!-- Placeholder for Student List -->
+            <LinearLayout
+                android:id="@+id/studentListContainer"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginTop="16dp">
+                <!-- Dynamically add student layouts here -->
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+    <!-- Take Attendance Button -->
+    <Button
+        android:id="@+id/btnTakeAttendance"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="70dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="20dp"
+        android:layout_marginRight="70dp"
+        android:backgroundTint="#1C1F1E"
+        android:text="Take Attendance"
+        android:textColor="#FFFFFF" />
+</LinearLayout>

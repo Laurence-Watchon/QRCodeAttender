@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:background="@drawable/login_background"
+    android:padding="16dp">
+
+    <!-- Logo -->
+
+    <ImageView
+        android:id="@+id/logo"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="1dp"
+        android:layout_marginBottom="90dp"
+        android:src="@drawable/ic_logo" />
+
+    <TextView
+        android:id="@+id/tvEmailInfo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Email not verified"
+        android:textSize="22sp"
+        android:textColor="#FFD700"
+        android:layout_marginBottom="20dp"
+        android:gravity="center"
+        android:fontFamily="sans-serif-light"
+        android:textStyle="italic"
+        android:shadowColor="#80000000"
+        android:shadowDx="2"
+        android:shadowDy="2"
+        android:shadowRadius="3"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="40dp"
+        android:letterSpacing="0.1" />
+
+
+    <Button
+        android:id="@+id/btnSendEmail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Send Verification Email"
+        android:layout_marginTop="30dp"
+        android:layout_marginBottom="10dp"
+        android:textSize="15sp"
+        android:gravity="center"
+        android:elevation="4dp"
+        android:padding="12dp"
+        android:layout_marginLeft="60dp"
+        android:layout_marginRight="60dp"
+        android:fontFamily="sans-serif-medium"
+        android:backgroundTint="#1C1F1E"
+        android:textColor="#FFFFFF"
+        android:textStyle="bold"
+        android:letterSpacing="0.1"/>
+
+
+    <Button
+        android:id="@+id/btnRefresh"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Refresh"
+        android:layout_marginBottom="10dp"
+        android:textSize="15sp"
+        android:gravity="center"
+        android:elevation="4dp"
+        android:padding="12dp"
+        android:layout_marginLeft="60dp"
+        android:layout_marginRight="60dp"
+        android:fontFamily="sans-serif-medium"
+        android:backgroundTint="#1C1F1E"
+        android:textColor="#FFFFFF"
+        android:textStyle="bold"
+        android:letterSpacing="0.1"/>
+
+    <Button
+        android:id="@+id/btnGoToGmail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Go to Gmail"
+        android:layout_marginBottom="10dp"
+        android:textSize="15sp"
+        android:gravity="center"
+        android:elevation="4dp"
+        android:padding="12dp"
+        android:layout_marginLeft="60dp"
+        android:layout_marginRight="60dp"
+        android:fontFamily="sans-serif-medium"
+        android:backgroundTint="#1C1F1E"
+        android:textColor="#FFFFFF"
+        android:textStyle="bold"
+        android:letterSpacing="0.1"/>
+
+    <Button
+        android:id="@+id/btnBackToLogin"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Back to Login"
+        android:textSize="15sp"
+        android:gravity="center"
+        android:elevation="4dp"
+        android:padding="12dp"
+        android:layout_marginLeft="60dp"
+        android:layout_marginRight="60dp"
+        android:fontFamily="sans-serif-medium"
+        android:backgroundTint="#1C1F1E"
+        android:textColor="#FFFFFF"
+        android:textStyle="bold"
+        android:letterSpacing="0.1"/>
+
+</LinearLayout>
