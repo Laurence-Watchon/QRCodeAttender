@@ -32,7 +32,10 @@
 ## 📸 Screenshots
 
 ### 🔹 QR Code Attendance Scanner
-![QR Code Screenshot](https://github.com/Laurence-Watchon/QRCodeAttender/raw/main/qrcode_atender_screenshot1.webp)
+<img src="https://github.com/Laurence-Watchon/QRCodeAttender/raw/main/qrcode_atender_screenshot1.webp" width="400"/>
+<img src="https://github.com/Laurence-Watchon/QRCodeAttender/raw/main/qrcode_atender_screenshot2.webp" width="400"/>
+<img src="https://github.com/Laurence-Watchon/QRCodeAttender/raw/main/qrcode_atender_screenshot3.webp" width="400"/>
+<img src="https://github.com/Laurence-Watchon/QRCodeAttender/raw/main/qrcode_atender_screenshot4.webp" width="400"/>
 
 ## 📧 Contact
 
